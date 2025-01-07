@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RITRAM ENGINEERING SERVICES</title>  
+    <style>
+        /* Body Background */
+        body {
+            background-image: url('1.jpg'); /* Ensure path to your image is correct */
+            background-size: cover;  /* Ensure the background covers the whole page */
+            background-position: center;
+            background-attachment: fixed;  /* Fix the background when scrolling */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white; /* Changed text color to white */
+            line-height: 1.6;  /* Improve text readability */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+            color: white;
+            border-radius: 50%;  /* Make the logo in a circular shape */
+            padding: 20px 40px;  /* Adjust padding to give some space around the text */
+            display: inline-block; /* Keep the h1 block inline */
+            background-color: #1E3A8A;  /* Background color for the logo */
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white; /* Change link text color to white */
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section Styles */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: white; /* Changed section headers to white */
+        }
+
+        section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: white; /* Changed paragraph text to white */
+        }
+
+        /* Images Gallery Styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            font-size: 1.1em;
+            margin: 10px 0 5px;
+            display: block;
+            color: white; /* Ensure label text is white */
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid white; /* Ensure input borders are white */
+            background-color: white;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50; /* Green */
+            color: white; /* Changed button text color to white */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white; /* Changed footer text color to white */
+            font-size: 1em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RITRAM ENGINEERING SERVICES</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#images">Images</a></li> <!-- Link to Images Section -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section with Additional Details -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to Ritram Engineering Services, a leading provider of engineering solutions and services tailored to meet your specific needs. We specialize in a variety of engineering sectors, delivering projects with high precision, cost efficiency, and industry-leading technology. Whether you're looking for construction, mechanical, electrical, or civil engineering services, our team of experts is committed to helping you succeed.</p>
+            <p>Our clients trust us because we understand the complexity of their needs and consistently deliver innovative solutions that drive success. Our motto is to provide the highest quality services, ensuring that every project is completed on time and to the highest standards.</p>
+            <p>Explore our website to learn more about how we can assist you with your engineering needs, or get in touch with us for personalized consultation.</p>
+        </section>
+
+        <!-- About Section with Detailed Company Information -->
+        <section id="about">
+            <h2>About</h2>
+            <p>Founded in 2020, Ritram Engineering Services has grown to become a trusted name in the engineering industry. Over the years, we have built a reputation for excellence and dedication, delivering innovative and sustainable solutions to clients across various sectors.</p>
+            <p>Our team is made up of experienced engineers, project managers, and technical experts who are passionate about what they do. We take a collaborative approach to problem-solving and are always looking for ways to improve our services. Our commitment to quality, safety, and sustainability ensures that every project we undertake meets the highest standards.</p>
+            <p>We offer a wide range of services, including:</p>
+            <ol style="text-align: left; margin-left: 40px;">
+                <li>Stainless steel fabrication</li>
+                <li>Kitchen equipment</li>
+                <li>Bakery equipment</li>
+                <li>Layout designs</li>
+                <li>Kitchen setup</li>
+                <li>Gas supply & installation</li>
+                <li>General steel fabrication</li>
+                <li>Training</li>
+            </ol>
+            <p>We believe in building long-term relationships with our clients, based on trust, transparency, and a commitment to delivering results. We work closely with each client to ensure that every project is not only completed successfully but also exceeds expectations.</p>
+        </section>
+
+        <!-- Images Section with Gallery -->
+        <section id="images">
+            <h2>Our Work - Images</h2>
+            <p>Click on any of the images below to view them in full size.</p>
+            <div class="gallery">
+                <img src="images/one.jpeg" alt="Image 1" onclick="openModal(this)">
+                <img src="images/two.jpeg" alt="Image 2" onclick="openModal(this)">
+                <img src="images/five.jpeg" alt="Image 5" onclick="openModal(this)">
+                <img src="images/six.jpeg" alt="Image 6" onclick="openModal(this)">
+                <img src="images/seven.jpeg" alt="Image 7" onclick="openModal(this)">
+                <img src="images/twelwe.jpeg" alt="Image 9" onclick="openModal(this)">
+                <img src="images/13.jpeg" alt="Image 10" onclick="openModal(this)">
+                <img src="images/15.jpeg" alt="Image 12" onclick="openModal(this)">
+                <img src="images/17.jpeg" alt="Image 14" onclick="openModal(this)">
+                <img src="images/20.jpeg" alt="Image 17" onclick="openModal(this)">
+                <img src="images/22.jpeg" alt="Image 19" onclick="openModal(this)">
+                <img src="images/23.jpeg" alt="Image 20" onclick="openModal(this)">
+                <img src="images/24.jpeg" alt="Image 21" onclick="openModal(this)">
+                <img src="images/25.jpeg" alt="Image 22" onclick="openModal(this)">
+                <img src="images/26.jpeg" alt="Image 23" onclick="openModal(this)">
+                <img src="images/27.jpeg" alt="Image 24" onclick="openModal(this)">
+                <img src="images/29.jpeg" alt="Image 26" onclick="openModal(this)">
+                <img src="images/30.jpeg" alt="Image 27" onclick="openModal(this)">
+                <img src="images/32.jpeg" alt="Image 29" onclick="openModal(this)">
+                <img src="images/33.jpeg" alt="Image 30" onclick="openModal(this)">
+                <img src="images/34.jpeg" alt="Image 31" onclick="openModal(this)">
+            </div>
+        </section>
+
+        <!-- Modal for Larger Image View -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <!-- Contact Section with Contact Form -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to know more about our services or have any inquiries, please reach out to us using the form below. We'd love to assist you in your next project!</p>
+            <div>
+                <p><strong>SALES ENGINEER:</strong> MR.KITAVI RICHARD</p>
+                <p><strong>PHONE:</strong> +256705801672 / +256760160663</p>
+                <p><strong>EMAIL:</strong> ritramservices2020@gmail.com / makmeshrichie@gmail.com</p>
+                <p><strong>ADDRESS:</strong> P.O. Box, Kireka-Mbuya Road, Uganda</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ritram Engineering Services. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to open the modal with the clicked image
+        function openModal(img) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
